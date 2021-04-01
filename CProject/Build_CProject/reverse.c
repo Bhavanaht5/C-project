@@ -4,7 +4,7 @@ void rev()
 {
   char str[1000], rev[1000];
   int i, j, count = 0;
-  printf ("\nEnter String to Reverse:");
+  printf ("\nEnter the String to Reverse:");
   scanf("%s", str);
  
   //finding the length of the string
