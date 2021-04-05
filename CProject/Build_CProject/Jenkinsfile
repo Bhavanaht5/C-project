@@ -4,11 +4,6 @@ environment{
     PATH = "/usr/bin:$PATH"
 }
     stages {
-        stage("clone git") {
-            steps {
-                git url: 'https://github.com/Bhavanaht5/C-project.git'
-            }
-        }
         stage("build") {
             steps {
                 sh "make"
