@@ -6,7 +6,8 @@ environment{
     stages {
         stage("build") {
             steps {
-                sh "make"
+     cd /home/ec2-user/jenkins/workspace/CProject/CProject/Build_CProject      
+     sh "make"
             }
         }
     }
