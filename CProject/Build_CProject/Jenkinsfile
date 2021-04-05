@@ -9,7 +9,7 @@ environment{
 sh '''
 #!/bin/bash
                 git clone https://github.com/Bhavanaht5/C-project.git         
-cd /home/ec2-user/jenkins/workspace/CProject/CProject/Build_CProject
+cd /home/ec2-user/jenkins/workspace/pipeline-1/CProject/Build_CProject/
                 make
 '''
             }
