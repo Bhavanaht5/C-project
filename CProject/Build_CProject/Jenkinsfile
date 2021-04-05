@@ -4,15 +4,16 @@ environment{
     PATH = "/usr/bin:$PATH"
 }
     stages {
-        stage("build") {
+        stage('git clone') {
             steps {
-sh '''
-#!/bin/bash
-                git clone https://github.com/Bhavanaht5/C-project.git         
-cd /home/ec2-user/jenkins/workspace/pipeline-1/CProject/Build_CProject/
-                make
-'''
+                git 'https://github.com/Bhavanaht5/C-project.git'
             }
         }
+        stage('build') {
+            steps {
+sh "cd /home/ec2-user/jenkins/workspace/pipeline-c/CProject/Build_CProject/"
+                sh "make"
             }
+        }
+     }
 }
