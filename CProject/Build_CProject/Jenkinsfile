@@ -11,8 +11,10 @@ environment{
         }
         stage('build') {
             steps {
-sh "cd /home/ec2-user/jenkins/workspace/pipeline-c/CProject/Build_CProject/"
-                sh "make"
+sh '''#!/bin/bash
+cd /home/ec2-user/jenkins/workspace/pipeline-c/CProject/Build_CProject/
+make
+                '''
             }
         }
      }
