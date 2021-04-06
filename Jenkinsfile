@@ -11,7 +11,7 @@ environment{
         }
         stage('build') {
             steps {
-sh "cd /var/lib/jenkins/workspace/pipelinec-usingscm/CProject/CProject/"
+sh "cd /var/lib/jenkins/workspace/pipelinec-usingscm/"
                 sh "make"
             }
         }
